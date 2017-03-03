@@ -55,7 +55,7 @@ body {
     background-position: center;
     background-repeat:no-repeat;
     height:400px;
-    background-size:contain;
+    background-size:cover;
 }
 
 #home_id h1 {

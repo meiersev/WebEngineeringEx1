@@ -48,3 +48,27 @@ body {
 #lp-logo img {
 	width: 100px;
 }
+
+#home_id {
+    background-image: url("../../images/header.jpg");
+    background-position: center;
+    background-repeat:no-repeat;
+    height:400px;
+    background-size:contain;
+}
+
+#home_id h1 {
+    background-color:black;
+    color:white;
+    position:relative;
+    top:35%;
+    font-weight:100;
+    font-size:48px;
+    text-align:center;
+}
+
+#home_id a {
+    display: block;
+    position: relative;
+    top: 38%;
+}

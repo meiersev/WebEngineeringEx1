@@ -1,10 +1,50 @@
 body {
-	width: 960px;
+	max-width: 960px;
 	vertical-align: middle;
 	margin: 0 auto;
 	background-color: grey;
+	font-family: 'Kreon', sans-serif;
+	margin-top: 70px;
 }
 
 .lp-brown {
 	background-color: #443333;
+}
+
+#header_id {
+	position: fixed;
+	top: 0;
+	width: 100vw;
+	left: 0;
+	height: 70px;
+	background-color: white;
+}
+
+#header_id div {
+	max-width: 960px;
+	margin: auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+#header_id ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+#header_id li {
+	min-width: 120px;
+	display: flex;
+	justify-content: center;
+}
+
+#header_id li a {
+	text-decoration: none;
+	color: black;
+	font-size: 1.5em;
+}
+
+#lp-logo img {
+	width: 100px;
 }

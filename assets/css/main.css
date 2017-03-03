@@ -63,12 +63,12 @@ body {
 	line-height: 40px;
 }
 
-#home_id .lp-button {
+#home_id .lp-button, #events_id .lp-button {
 	background-color: rgba(0,0,0,0.8);
 	margin: auto;
 }
 
-#home_id .lp-button:hover {
+#home_id .lp-button:hover, #events_id .lp-button:hover {
 	background-color: rgba(20,20,20,0.8);
 }
 
@@ -76,7 +76,7 @@ body {
 	display: inline-block;
 }
 
-#menu_id .lp-button:hover, #events_id .lp-button:hover {
+#menu_id .lp-button:hover {
 	background-color: rgba(255,255,255,0.1)
 }
 
@@ -90,7 +90,6 @@ body {
 
 #events_id .lp-button {
 	display: block;
-	margin: 0 auto;
 }
 
 #home_id {

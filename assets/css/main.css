@@ -1,0 +1,10 @@
+body {
+	width: 960px;
+	vertical-align: middle;
+	margin: 0 auto;
+	background-color: grey;
+}
+
+.lp-brown {
+	background-color: #443333;
+}

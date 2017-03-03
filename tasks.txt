@@ -1,0 +1,15 @@
+Player 1 (Severin)
+Booking
+Contact Form
+Header
+Buttons
+
+Player 2 (Martin)
+Upcoming events
+Home
+
+Player 3 (Jakob)
+Menu
+About fields
+Footer + Copyright
+

@@ -3,7 +3,7 @@ body {
 	vertical-align: middle;
 	margin: 0 auto;
 	background-color: grey;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Kreon', sans-serif;
 	margin-top: 70px;
 }
 
@@ -49,6 +49,47 @@ body {
 
 #lp-logo img {
 	width: 100px;
+}
+
+.lp-button {
+	width: 150px;
+	height: 40px;
+	border: 1px solid white;
+	border-radius: 2px;
+	color: white;
+	text-decoration: none;
+	text-align: center;
+	line-height: 40px;
+}
+
+#home_id .lp-button {
+	background-color: rgba(0,0,0,0.8);
+	margin: auto;
+}
+
+#home_id .lp-button:hover {
+	background-color: rgba(20,20,20,0.8);
+}
+
+#menu_id .lp-button {
+	display: inline-block;
+}
+
+#menu_id .lp-button:hover, #events_id .lp-button:hover {
+	background-color: rgba(255,255,255,0.1)
+}
+
+#menu_id .lp-button.selected {
+	background-color: rgba(0,100,0,0.8);
+}
+
+#menu_id .lp-button.selected:hover {
+	background-color: rgba(20,120,20,0.8)
+}
+
+#events_id .lp-button {
+	display: block;
+	margin: 0 auto;
 }
 
 #home_id {

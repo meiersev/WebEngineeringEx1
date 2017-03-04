@@ -210,13 +210,24 @@ input, textarea {
 	font-family: 'Roboto', sans-serif;
 }
 
+.contact-two-col-row, .booking-two-col-row {
+	display: flex;
+	margin: 10px auto;
+	justify-content: space-between;
+}
+
+.half-width-column {
+	width: 49%;
+}
+
 .lp-input {
-	min-height: 30px;
+	min-height: 40px;
 	width: 100%;
 	padding: 5px 10px;
 	border: 0.5px solid rgba(200, 200, 200, 1);
 	border-radius: 3px;
 	background-color: rgba(240,240,240, 1);
+	box-sizing: border-box;
 }
 
 textarea.lp-input {
@@ -232,16 +243,6 @@ textarea.lp-input {
 #contact_form_container_id {
 	width: 80%;
 	max-width: 500px;
-}
-
-#contact_first_row_id {
-	display: flex;
-	margin: 10px auto;
-	justify-content: space-between;
-}
-
-#contact_name_id, #contact_email_id {
-	width: 47%;
 }
 
 #contact_buttons_list_container_id {
@@ -269,4 +270,35 @@ textarea.lp-input {
 	background-color: white;
 	color: rgba(170, 170, 170, 1);
 	border: 1px solid rgba(170, 170, 170, 1);
+}
+
+#booking_id {
+	background-image: url('../../images/book-table.jpg');
+	background-size: cover;
+}
+
+#booking_inner_id {
+	max-width: 400px;
+	margin: auto;
+	background-color: rgba(0, 0, 0, 0.6);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#booking_title_id {
+	color: white;
+	margin: auto;
+	padding: 20px;
+	text-shadow: 2px 2px 2px black;
+}
+
+#booking_form_container_id {
+	width: 80%;
+}
+
+#booking_button_id {
+	display: block;
+	background-color: black;
+	margin: 20px auto;
 }

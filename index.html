@@ -270,9 +270,9 @@
 			<div id="contact_form_id">
 				<div id="contact_form_container_id">
 					<form method="post" action="#">
-						<div id="contact_first_row_id">
-							<div id="contact_name_id"><input class="lp-input" type="text" placeholder="Name" /></div>
-							<div id="contact_email_id"><input class="lp-input" type="text" placeholder="Email" /></div>
+						<div class="contact-two-col-row">
+							<div class="half-width-column"><input class="lp-input" type="text" placeholder="Name" /></div>
+							<div class="half-width-column"><input class="lp-input" type="text" placeholder="Email" /></div>
 						</div>
 						<div >
 							<div id="contact_message_id"><textarea class="lp-input" name="message" placeholder="Message"></textarea></div>
@@ -293,27 +293,27 @@
 			<!-- 5th -->
 
 			<div id="booking_id">
-				<div >
-					<h2  >Book a table</h2>
-					<div >
-						<div  >
+				<div id="booking_inner_id">
+					<h2  id="booking_title_id">Book a table</h2>
+					<div id="booking_form_container_id">
+						<!-- <div id="booking_form_id"> -->
 							<form method="post" action="#">
-								<div >
-									<div ><input type="text" placeholder="Name" /></div>
-									<div ><input type="text" placeholder="Phone" /></div>
+								<div class="booking-two-col-row">
+									<div class="half-width-column"><input class="lp-input" type="text" placeholder="Name" /></div>
+									<div class="half-width-column"><input class="lp-input" type="text" placeholder="Phone" /></div>
 								</div>
-								<div >
-									<div ><input type="text" placeholder="Date" /></div>
-									<div ><input type="text" placeholder="Time" /></div>
+								<div class="booking-two-col-row">
+									<div class="half-width-column"><input class="lp-input" type="text" placeholder="Date" /></div>
+									<div class="half-width-column"><input class="lp-input" type="text" placeholder="Time" /></div>
 								</div>
 
-								<div >
-									<div ><textarea name="message" placeholder="Message"></textarea></div>
+								<div id="booking_message_id">
+									<div ><textarea class="lp-input" name="message" placeholder="Message"></textarea></div>
 								</div>
-							</br>
-							<input type="submit"  class="lp-button" value="Book" />
+							<!-- </br> -->
+							<input id="booking_button_id" type="submit" class="lp-button hover-dark-gray" value="Book" />
 
-						</div>
+						<!-- </div> -->
 					</form>
 				</div>
 			</div>

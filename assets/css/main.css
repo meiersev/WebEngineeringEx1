@@ -2,7 +2,7 @@ body {
 	max-width: 960px;
 	vertical-align: middle;
 	margin: 0 auto;
-/*	background-color: grey;  */
+	background-color:black ;  
 	font-family: 'Roboto', sans-serif;
 	margin-top: 70px;
 }
@@ -223,7 +223,7 @@ a {
 
 #events_id{
     color:white;
-    padding-top:60px;
+    padding:60px 80px 40px;
 }
 
 #events_id h3{
@@ -244,7 +244,7 @@ a {
 
 #events_id .container-element{
     text-align:center;
-    flex-basis: 25%;
+    flex-basis: 27%;
     order:1;
 }
 

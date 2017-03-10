@@ -1,15 +1,43 @@
 body {
 	max-width: 960px;
+	min-width: 320px;
 	vertical-align: middle;
 	margin: 0 auto;
 	background-color:black ;  
 	font-family: 'Roboto', sans-serif;
+	font-size: 100%;
 	margin-top: 70px;
+}
+
+@media screen and (min-width:769px ) and (max-width:1024px) {
+	h1 { font-size: 3em; }
+	h2 { font-size: 2em; }
+    h3 { font-size: 2em; }
+    p, input, textarea, li { font-size: 1em; }
+}
+@media screen and (min-width:481px ) and (max-width:768px) {
+    h1 { font-size: 3em; }
+    h2 { font-size: 2em; }
+    h3 { font-size: 2em; }
+    p, input, textarea, li { font-size: 1em; }
+}
+@media screen and (max-width:480px) {
+    h1 { font-size: 3em; }
+    h2 { font-size: 4em; }
+    h3 { font-size: 4em; }
+    p, input, textarea, li { font-size: 3em; }
 }
 
 a {
 	text-decoration: none;
 	color: white;
+}
+
+a.anchor {
+    display: block;
+    position: relative;
+    top: -70px;
+    visibility: hidden;
 }
 
 .lp-brown {

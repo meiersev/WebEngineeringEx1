@@ -306,6 +306,7 @@ a.anchor {
 .lp-button {
 	width: 150px;
 	height: 2em;
+    padding: 0;
 	border: 1px solid white;
 	border-radius: 3px;
 	color: white;

@@ -131,6 +131,9 @@ a.anchor {
     body {
         margin: 0;
     }
+    a.anchor {
+        top: -60px;
+    }
     #header_id {
         position: static;
         height: auto;
@@ -151,7 +154,6 @@ a.anchor {
         text-align: center;
         border-top: 1px solid rgba(210,210,210,0.3);
     }
-
     #lp-logo a {
         position: fixed;
         z-index: 1;
@@ -161,6 +163,13 @@ a.anchor {
     #lp-logo a img {
         width: 3.5em;
         height: 3.5em;
+    }
+    #lp-logo #logo_background_id {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 61px;
+        background-color: white;
     }
 }
 

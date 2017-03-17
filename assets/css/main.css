@@ -305,6 +305,66 @@ a.anchor {
 	}
 }
 
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: rgb(180,180,180)
+}
+
+.popup:target {
+    display: flex;
+    align-content: center;
+}
+
+.popup article {
+    width: 80%;
+    max-width: 600px;
+    margin: auto;
+    background-color: white;
+    -webkit-border-radius:4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
+.popup header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2em;
+}
+
+.popup h3 {
+    margin-left: 1em;
+}
+
+.popup p {
+    margin: 1em;
+    font-size: 1.1em;
+}
+
+.popup .close-button {
+    color: black;
+    font-weight: bolder;
+    height: 1em;
+    line-height: 1em;
+    margin-right: 1em;
+}
+
+#menu_id .popup img {
+    margin: auto;
+    max-width: 90%;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+}
+
 /* END OF MENU SECTION*/
 
 

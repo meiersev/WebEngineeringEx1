@@ -719,3 +719,18 @@ section .footer-col{
 
 	}
 }
+
+/* Animations */
+.move-to-left {
+    transform: translate(-20vw,0);
+}
+.move-to-right {
+    transform: translate(20vw,0);
+}
+.move-down {
+    transform: translate(0,20vh);
+}
+.move-back-to-default {
+    transform: translate(0,0);
+    transition: transform 0.4s ease-in-out;
+}

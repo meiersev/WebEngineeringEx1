@@ -271,22 +271,27 @@ nav li a {
         padding: 1em 2em 1em 2em;
     }
     #menu_description_id {
-         width: 40%;
+         width: 62.1%;
 	}
 	#menu_id .menu-title {
 		padding: 0.25em 0.5em 0.75em 0.5em;
 	}
+	#menu_id .menu-float {
+		width: 100%;
+		margin: 0.4em 0.4em 0.4em 0.4em;
+		padding-top: 0.2em;
+		padding-bottom: 0.2em;
+    }
 }
 @media screen and (min-width:481px ) and (max-width:768px) {
 	#menu_id{
         padding: .5em 1em .5em 1em;
     }
 	#menu_description_id {
-		width: 50%;
+		width: auto;
 	}
-	#menu_id .menu-title {
-		padding: 0.1em 0.2em 0.3em 0.2em;
-		bottom: 1.5em;
+	#menu_id .menu-cell {
+		display: block;
 	}
 }
 @media screen and (max-width:480px) {
@@ -294,17 +299,15 @@ nav li a {
         padding: .1em .5em .1em .5em;
     }
 	#menu_description_id {
-		width: 62.1%;
+		width: auto;
+	}
+	#menu_id .menu-cell {
+		display: block;
 	}
 	#menu_id .menu-float {
 		width: 100%;
-		padding-top: 0.2em;
-		padding-bottom: 0.2em;
+		margin: .5em 1em .5em 1em;
     }
-	#menu_id .menu-title {
-		padding: 0.1em 0.1em 0.2em 0.1em;
-		bottom: 1em;
-	}
 }
 
 .popup {

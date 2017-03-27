@@ -668,7 +668,7 @@ section.footer-table{
 	text-align: left;
 	font-weight: 500;
 }
-section .footer-col{
+section.footer-col{
 	display: block;
 	text-align: left;
 }
@@ -689,13 +689,13 @@ section .footer-col{
 	-webkit-padding-start: 0;
 }
 @media screen and (min-width:1025px ) {
-	.footer-col  h2{
+	section.footer-col  h2{
 		margin-bottom: 2em;
 	}
 }
 @media screen and (min-width:769px ) and (max-width:1024px) {
-	.footer-table{
-		padding: 1em 7em 0 7em;
+	section.footer-table{
+		padding: 1em 3em 0 3em;
 	}
 	#copyright_id {
 		padding-bottom: 2em;
@@ -703,11 +703,14 @@ section .footer-col{
 	}
 }
 @media screen and (min-width:481px ) and (max-width:768px) {
-	.footer-table{
+	section.footer-table{
 		flex-direction: column;
 		text-align: center;
 		padding: 1em 2em 0 2em;
 
+	}
+	section.footer-col{
+		text-align: center;
 	}
     #copyright_id {
 		padding-bottom: 1em;
@@ -715,11 +718,17 @@ section .footer-col{
 	}
 }
 @media screen and (max-width:480px) {
-   	.footer-table{
+
+   	section.footer-table{
 		flex-direction: column;
 		text-align: center;
 		padding: 1em 1em 0 1em;
 
+	}
+}
+@media screen and (max-width:480px) {
+		section.footer-col {
+		text-align: center;
 	}
 }
 

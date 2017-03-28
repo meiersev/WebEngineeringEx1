@@ -200,6 +200,8 @@ nav li a {
 /*
  *	Menu section
  */
+
+/* Menu styles*/ 
 #menu_id{
 	padding: 1em 5em 1em 5em;
 	color: rgba(220,220,210,1.0);
@@ -510,6 +512,16 @@ nav li a {
     -moz-border-radius: 0;
     border-radius: 0;
 }
+
+/* Menu visibility */ 
+	/* Selection */
+#fresh_pasta_id  {display: none;}
+#meat_fish_id  {display: none;}
+#dessert_id {display: none;}
+	/* Pictures */
+#fresh_pasta_id.menu-float-wrapper  {display: none;}
+#meat_fish_id.menu-float-wrapper  {display: none;}
+#dessert_id.menu-float-wrapper {display: none;}
 
 /* END OF MENU SECTION*/
 

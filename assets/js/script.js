@@ -142,4 +142,66 @@ $(document).ready(function() {
     $(window).on('DOMContentLoaded load scroll', bookingAppearHandler);
     $(window).on('DOMContentLoaded load scroll', footerAppearHandler);
     $(window).on('DOMContentLoaded load scroll', copyrightAppearHandler);
+    
+	
+	/* Menu stuff*/
+	$(window).scroll(adapt_menu_to_viewport);
+	$("#appetizers_btn").click(function () {display_menu(0);});
+	$("#fresh_pasta_btn").click(function () {display_menu(1);});
+	$("#meat_fish_btn").click(function () {display_menu(2);});
+	$("#dessert_btn").click(function () {display_menu(3);});
 });
+
+/* Menu functions*/
+
+function adapt_menu_to_viewport(){
+	if (window.matchMedia('(min-width: 1025px)').matches) {
+		var section_frame = $("section#menu_id");
+		var h = $(window).innerHeight() - section_frame.height();
+		var y = h - section_frame[0].getBoundingClientRect().top;
+		var i = Math.floor(4*y/h);
+		if(i < 0) {display_menu(0);} 
+		else if(i > 3) {display_menu(3);} 
+		else { display_menu(i);}
+	}
+}
+
+// Allowed arguments: 0, 1, 2 ,3
+function display_menu(n){
+	// Hide all pictures
+	$("div#appetizers_id").css("display", "none");
+	$("div#fresh_pasta_id").css("display", "none");
+	$("div#meat_fish_id").css("display", "none");
+	$("div#dessert_id").css("display", "none");
+	
+	// Hide all Titles
+	$("h2#appetizers_id").css("display", "none");
+	$("h2#fresh_pasta_id").css("display", "none");
+	$("h2#meat_fish_id").css("display", "none");
+	$("h2#dessert_id").css("display", "none");
+	
+	// Hide all Descriptions
+	$("p#appetizers_id").css("display", "none");
+	$("p#fresh_pasta_id").css("display", "none");
+	$("p#meat_fish_id").css("display", "none");
+	$("p#dessert_id").css("display", "none");
+	
+	// Unselect all Buttons
+	$("#appetizers_btn").removeClass("selected");
+	$("#fresh_pasta_btn").removeClass("selected");
+	$("#meat_fish_btn").removeClass("selected");
+	$("#dessert_btn").removeClass("selected");
+	
+	// select visible subsection
+	var menuSectionId = 
+		(n == 1) ? "#fresh_pasta" 
+		: (n == 2) ? "#meat_fish"
+		: (n == 3) ? "#dessert"
+		: "#appetizers";
+	// Show selected subsection
+	$("div" + menuSectionId + "_id").css("display", "flex");	
+	$("p" + menuSectionId + "_id").css("display", "block");
+	$("h2" + menuSectionId + "_id").css("display", "block");
+	$(menuSectionId + "_btn").addClass("selected");
+}
+

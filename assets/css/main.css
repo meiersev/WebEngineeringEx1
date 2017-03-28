@@ -295,17 +295,16 @@ nav li a {
         top:60%;
         bottom:20%;
 	}
-<<<<<<< HEAD
+
 	#menu_id .menu-float {
 		width: 100%;
 		margin: 0.4em 0.4em 0.4em 0.4em;
 		padding-top: 0.2em;
 		padding-bottom: 0.2em;
-=======
+    }
 
 	#menu_id .menu-title a {
         margin-left: 0.5em;
->>>>>>> clean
     }
 }
 @media screen and (min-width:481px ) and (max-width:768px) {
@@ -315,15 +314,14 @@ nav li a {
 	#menu_description_id {
 		width: auto;
 	}
-<<<<<<< HEAD
 	#menu_id .menu-cell {
 		display: block;
-=======
+    }
+
 	#menu_id .menu-title {
 		padding: 0.1em 0em 0.3em 0em;
         top:auto;
 		bottom: 1.5em;
->>>>>>> clean
 	}
 
 	#menu_id .menu-title a {

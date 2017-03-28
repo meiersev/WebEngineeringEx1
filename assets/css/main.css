@@ -256,16 +256,33 @@ nav li a {
 }
 .menu-title a {
 	border-bottom: 1px dotted grey;
+    margin-left:0.5em;
 }
+
 #menu_id .menu-title {
 	background: rgba(0,0,0,0.75);
 	color: white;
 	position: absolute;
 	bottom: 2em;
+    top:9em;
 	left: 0;
 	width: 100%;
-	padding: 0.5em 0.75em 1em 0.75em;
+	padding: 0.5em 0em 1em 0em;
 }
+
+#menu_id .menu-float:hover .menu-title a{
+    animation-name:spin1;
+    animation-duration:1.5s;
+    animation-fill-mode:both;
+}
+
+#menu_id .menu-float:hover .menu-title{
+    animation-name:colorAnimation1;
+    animation-duration:1s;
+    animation-fill-mode:both;
+    animation-timing-function:ease-in;
+}
+
 @media screen and (min-width:769px ) and (max-width:1024px) {
 	#menu_id{
         padding: 1em 2em 1em 2em;
@@ -274,13 +291,21 @@ nav li a {
          width: 62.1%;
 	}
 	#menu_id .menu-title {
-		padding: 0.25em 0.5em 0.75em 0.5em;
+		padding: 0.25em 0em 0.75em 0em;
+        top:60%;
+        bottom:20%;
 	}
+<<<<<<< HEAD
 	#menu_id .menu-float {
 		width: 100%;
 		margin: 0.4em 0.4em 0.4em 0.4em;
 		padding-top: 0.2em;
 		padding-bottom: 0.2em;
+=======
+
+	#menu_id .menu-title a {
+        margin-left: 0.5em;
+>>>>>>> clean
     }
 }
 @media screen and (min-width:481px ) and (max-width:768px) {
@@ -290,9 +315,26 @@ nav li a {
 	#menu_description_id {
 		width: auto;
 	}
+<<<<<<< HEAD
 	#menu_id .menu-cell {
 		display: block;
+=======
+	#menu_id .menu-title {
+		padding: 0.1em 0em 0.3em 0em;
+        top:auto;
+		bottom: 1.5em;
+>>>>>>> clean
 	}
+
+	#menu_id .menu-title a {
+        margin-left: 0.2em;
+    }
+
+    #menu_id .menu-float:hover .menu-title a{
+    animation-name:spin2;
+    animation-duration:1.5s;
+    animation-fill-mode:both;
+    }
 }
 @media screen and (max-width:480px) {
 	#menu_id{
@@ -308,7 +350,108 @@ nav li a {
 		width: 100%;
 		margin: .5em 1em .5em 1em;
     }
+	#menu_id .menu-title {
+		padding: 0.1em 0em 0.2em 0em;
+        top:auto;
+		bottom: 1em;
+	}
+
+    #menu_id .menu-float:hover .menu-title a{
+    animation-name:spin3;
+    animation-duration:1.5s;
+    animation-fill-mode:both;
+    }
+
+    #menu_id .menu-float:hover .menu-title{
+    animation-name:colorAnimation2;
+    animation-duration:1s;
+    animation-fill-mode:both;
+    animation-timing-function:ease-in;
+    }
 }
+
+@keyframes colorAnimation1{
+    0%{
+        background: linear-gradient(rgba(255,1,0,0.75),rgba(0,0,0,0));
+    }
+    10%{
+        top:70%;
+    }
+    60%{
+        top:1em;
+    }
+    100%{
+        background: linear-gradient(rgba(255,1,0,0.75),rgba(0,0,0,0));
+        top:1em;
+        border-radius:10px;
+    }
+}
+
+@keyframes colorAnimation2{
+    0%{
+        background: linear-gradient(rgba(255,1,0,0.75),rgba(0,0,0,0));
+    }
+    10%{
+        top:70%;
+    }
+    60%{
+        top:0em;
+    }
+    100%{
+        background: linear-gradient(rgba(255,1,0,0.75),rgba(0,0,0,0));
+        top:0em;
+        border-radius:10px;
+    }
+}
+
+@keyframes spin1{
+    0%{
+        position:absolute;
+        transform:rotateY(0deg);
+    }
+    80%{
+        margin-top:20%;
+    }
+    100%{
+        position:absolute;
+        transform:rotateY(360deg);
+        margin-top:20%;
+        margin-left:30%;
+    }
+}
+
+@keyframes spin2{
+    0%{
+        position:absolute;
+        transform:rotateY(0deg);
+    }
+    80%{
+        margin-top:20%;
+    }
+    100%{
+        position:absolute;
+        transform:rotateY(360deg);
+        margin-top:20%;
+        margin-left:20%;
+    }
+}
+
+@keyframes spin3{
+    0%{
+        position:absolute;
+        transform:rotateY(0deg);
+    }
+    80%{
+        margin-top:20%;
+    }
+    100%{
+        position:absolute;
+        transform:rotateY(360deg);
+        margin-top:20%;
+        margin-left:20%;
+    }
+}
+
 
 .popup {
     display: none;

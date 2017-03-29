@@ -344,6 +344,10 @@ section#menu_id{min-height: 675px;}
     #menu_id .menu-float span {
         font-size: 0.8em;
     }
+    #menu_id .menu-float {
+        width: 100%;
+        margin: .5em 1em .5em 1em;
+    }
 }
 
 @keyframes colorBackwards{

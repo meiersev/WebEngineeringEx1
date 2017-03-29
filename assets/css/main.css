@@ -207,6 +207,7 @@ nav li a {
 	color: rgba(220,220,210,1.0);
 	text-align: center;
 }
+section#menu_id{min-height: 675px;}
 #menu_id h2 {
 	font-size: small;
 } 

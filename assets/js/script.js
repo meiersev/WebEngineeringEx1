@@ -157,9 +157,9 @@ $(document).ready(function() {
 function adapt_menu_to_viewport(){
 	if (window.matchMedia('(min-width: 1025px)').matches) {
 		var section_frame = $("section#menu_id");
-		var h = $(window).innerHeight() - section_frame.height();
+		var h = Math.max($(window).innerHeight() - section_frame.outerHeight(),160);
 		var y = h - section_frame[0].getBoundingClientRect().top;
-		var i = Math.floor(4*y/h);
+		var i = Math.floor(2.25*y/h)+1;
 		if(i < 0) {display_menu(0);} 
 		else if(i > 3) {display_menu(3);} 
 		else { display_menu(i);}

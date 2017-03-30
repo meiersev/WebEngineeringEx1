@@ -260,17 +260,6 @@ section#menu_id{min-height: 675px;}
 	margin: 1em 0 1em 0;
 	overflow: hidden;
 }
-.menu-title span {
-    display: inline-block;
-    position: absolute;
-    border-bottom: 1px dotted grey;
-    /*margin-left:0.5em;*/
-    margin: 0 0 0 0.5em;
-    right: 100%;
-    left: 0;
-    text-align: center;
-    white-space: nowrap;
-}
 
 #menu_id .menu-title {
     display: block;
@@ -281,22 +270,7 @@ section#menu_id{min-height: 675px;}
 	left: 0;
 	width: 100%;
     height: 2em;
-}
-
-#menu_id .menu-float:hover .menu-title span {
-    animation-name:spin1;
-    animation-duration:1.5s;
-    animation-fill-mode:both;
-    top: 47%;
-    transition: top 0.5s ease-in-out, right 0.5s ease-in-out;
-    right: 0;
-    border: none;
-}
-
-#menu_id .menu-float:hover .centering-buffer {
-    display:block;
-    width: 10px;
-    transition: width 0.5s ease-in-out;
+    /*transition: bottom 0.5s ease-in;*/
 }
 
 #menu_id .menu-float:hover .menu-title {
@@ -305,6 +279,28 @@ section#menu_id{min-height: 675px;}
     bottom:0;
     background: linear-gradient(rgba(255,1,0,0.75),rgba(0,0,0,0));
     transition: height 0.5s ease-in;
+}
+
+#menu_id .menu-title span {
+    display: block;
+    width: 20%;
+    position: relative;
+    margin: 0.2em 0 0 0.2em;
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    text-decoration-color: gray;
+    white-space: nowrap;
+    transition: transform 1.5s ease-in-out, right 1.5s, width 1s ease-in-out;
+ }
+
+#menu_id .menu-float:hover .menu-title span {
+    transform: rotateY(360deg);
+    top: 47%;
+    left: 0;
+    width: 100%;
+    text-decoration: none;
+    transition: top 0.5s ease-in-out, transform 1.5s ease-out, width 1s ease-out;
 }
 
 @media screen and (min-width:769px ) and (max-width:1024px) {
